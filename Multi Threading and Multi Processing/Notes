@@ -1,6 +1,6 @@
 # Multithreading & Multiprocessing Notes
 
-## 🔹 Key Concepts
+🔹 Key Concepts
 
 - Process
   A process is an instance of a program that is being executed.  
@@ -15,7 +15,7 @@
   Multiple threads can exist within the same process, sharing resources like memory but running independently.  
 
 
-## 🔹 Difference Between Process and Thread
+🔹 Difference Between Process and Thread
 
 | Feature            | Process | Thread |
 |--------------------|---------|--------|
@@ -26,7 +26,7 @@
 | Dependency         | Independent | Dependent on process |
 
 
-## 🔹 Memory Layout of a Process
+🔹 Memory Layout of a Process
 
 A process in memory is divided into the following segments:
 
