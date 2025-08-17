@@ -2,19 +2,18 @@
 
 ## 🔹 Key Concepts
 
-- **Process**  
+- Process
   A process is an instance of a program that is being executed.  
   Example: Running `python script.py` starts a new process.  
 
-- **Program**  
+- Program
   A program is a sequence of instructions written in a programming language.  
   It is a *passive entity* stored on disk (e.g., `.exe`, `.py`, `.c` files).  
 
-- **Thread**  
+- Thread
   A thread is the smallest unit of execution within a process.  
   Multiple threads can exist within the same process, sharing resources like memory but running independently.  
 
----
 
 ## 🔹 Difference Between Process and Thread
 
@@ -26,7 +25,6 @@
 | Creation Overhead  | High (more resources required) | Low (lightweight) |
 | Dependency         | Independent | Dependent on process |
 
----
 
 ## 🔹 Memory Layout of a Process
 
@@ -34,10 +32,9 @@ A process in memory is divided into the following segments:
 
 | Segment       | Description |
 |---------------|-------------|
-| **Code Segment (Text Segment)** | Contains the program instructions (machine code). |
-| **Data Segment** | Stores global and static variables. |
-| **Heap** | Dynamically allocated memory during runtime (`malloc`, `new`). |
-| **Stack** | Stores local variables, function calls, return addresses. |
-| **Registers** | Small storage locations in CPU for fast access (e.g., Program Counter, Stack Pointer). |
+| Code Segment (Text Segment) | Contains the program instructions (machine code). |
+| Data Segment | Stores global and static variables. |
+| Heap | Dynamically allocated memory during runtime (`malloc`, `new`). |
+| Stack | Stores local variables, function calls, return addresses. |
+| Registers | Small storage locations in CPU for fast access (e.g., Program Counter, Stack Pointer). |
 
----
