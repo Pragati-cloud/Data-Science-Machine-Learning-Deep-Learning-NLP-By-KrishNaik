@@ -1,0 +1,33 @@
+📊 Correlation and Covariance
+
+* Covariance
+Measures how two variables change together.
+
+Formula:
+[
+\text{Cov}(X,Y) = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{n-1}
+]
+
+* Correlation
+A standardized measure of relationship between two variables.
+
+Formula:
+[
+r = \frac{\text{Cov}(X,Y)}{\sigma_X \sigma_Y}
+]
+
+📌 Example:
+
+X = {1, 2, 3}, Y = {2, 4, 6}
+
+Perfect positive correlation (r = +1).
+
+📊 Interpretation of r
+r = +1 → Perfect positive relation
+r = 0 → No relation
+r = -1 → Perfect negative relation
+
+🖼️ Diagram
+ Positive Correlation → /
+ No Correlation       → .
+ Negative Correlation → \
