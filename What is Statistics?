@@ -1,0 +1,32 @@
+# 📊 What is Statistics?
+
+**Definition:**
+Statistics is the branch of mathematics concerned with **collecting, analyzing, interpreting, and presenting data**.
+
+It helps in converting **raw data** into **meaningful information**.
+
+---
+
+## 🔹 Applications of Statistics
+
+1. **Business & Economics** – Market analysis, demand forecasting, quality control.
+2. **Science & Engineering** – Designing experiments, reliability testing, machine learning.
+3. **Medicine** – Clinical trials, drug testing, disease predictions.
+4. **Government & Policy** – Census, surveys, public health analysis.
+5. **Education** – Student performance analysis, research studies.
+
+---
+
+## 📌 Example:
+
+* Suppose we want to analyze exam marks of 1000 students.
+* Without statistics, raw marks are confusing.
+* With statistics → we can compute **average marks, top performers, and overall trend**.
+
+---
+
+## 🖼️ Diagram (Data Flow in Statistics)
+
+```
+ Raw Data → Organize → Analyze → Interpret → Conclusion
+```
