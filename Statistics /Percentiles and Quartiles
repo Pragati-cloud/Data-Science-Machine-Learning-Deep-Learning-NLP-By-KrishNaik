@@ -1,0 +1,27 @@
+📊 Percentiles and Quartiles
+
+Percentile
+A value below which a given percentage of observations fall.
+Example: 90th percentile = score below which 90% of data lies.
+
+Formula (position):
+[
+P_k = \frac{k(N+1)}{100}
+]
+
+Quartiles
+Divide data into four equal parts.
+Q1 (25%), Q2 (Median, 50%), Q3 (75%).
+Interquartile Range (IQR) = Q3 – Q1
+📌 Example:
+
+Data = {10, 20, 30, 40, 50, 60, 70, 80}
+
+Q1 = 25th percentile = 25
+Q2 = Median = 45
+Q3 = 75th percentile = 65
+IQR = 65 – 25 = 40
+
+🖼️ Diagram
+Min | Q1 | Median | Q3 | Max
+ |----|-----|-------|----|
