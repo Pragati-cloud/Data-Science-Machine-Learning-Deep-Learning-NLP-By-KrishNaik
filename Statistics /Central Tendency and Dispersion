@@ -1,0 +1,38 @@
+📊 Central Tendency and Dispersion
+Central Tendency
+
+Measures that indicate the center/average of the data.
+
+Mean:
+[
+\text{Mean} = \frac{\sum x_i}{n}
+]
+
+Example: {2, 4, 6, 8} → Mean = 5
+
+Median: Middle value when data is arranged.
+Example: {5, 7, 8, 10, 12} → Median = 8
+
+Mode: Most frequent value.
+Example: {2, 3, 3, 5, 7} → Mode = 3
+
+Dispersion
+
+Measures of how spread out the data is.
+
+Range = Max – Min
+Variance = Average squared deviation from mean
+Standard Deviation (SD) = √Variance
+IQR (Interquartile Range) = Q3 – Q1
+📌 Example:
+
+Data = {10, 20, 30, 40, 50}
+
+Mean = 30
+Range = 50 – 10 = 40
+Variance = 200
+SD = √200 ≈ 14.14
+🖼️ Diagram
+   Spread of Data → Low dispersion (values close to mean)
+                  → High dispersion (values spread out)
+```
