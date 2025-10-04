@@ -1,0 +1,29 @@
+# 📊 Population and Sample
+
+---
+
+## Population
+
+* The **entire group** of individuals, items, or data under study.
+* Example: All students in a university.
+
+## Sample
+
+* A **subset of the population** used for analysis.
+* Example: 200 students selected from the university.
+
+---
+
+## 📌 Key Point
+
+We use **samples** because studying the whole population is often **impractical, costly, and time-consuming**.
+
+---
+
+## 🖼️ Diagram
+
+```
+Population: [All students in India]
+       ↓ Sample taken
+Sample: [1000 students surveyed]
+```
