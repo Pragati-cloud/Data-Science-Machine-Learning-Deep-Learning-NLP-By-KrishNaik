@@ -1,45 +1,23 @@
-# 📊 Types of Statistics
+📊 What is Statistics?
 
-Statistics can be divided into **two major categories**:
+Definition: Statistics is the branch of mathematics concerned with collecting, analyzing, interpreting, and presenting data.
 
----
+It helps in converting raw data into meaningful information.
 
-## 1️⃣ Descriptive Statistics
+🔹 Applications of Statistics
 
-* Deals with **summarizing and describing** data.
-* Methods:
+Business & Economics – Market analysis, demand forecasting, quality control.
+Science & Engineering – Designing experiments, reliability testing, machine learning.
+Medicine – Clinical trials, drug testing, disease predictions.
+Government & Policy – Census, surveys, public health analysis.
+Education – Student performance analysis, research studies.
 
-  * Measures of central tendency (mean, median, mode)
-  * Measures of dispersion (range, variance, standard deviation)
-  * Graphical methods (charts, histograms, box plots)
+📌 Example:
 
-**Example:**
-Heights of 50 students →
+Suppose we want to analyze exam marks of 1000 students.
+Without statistics, raw marks are confusing.
+With statistics → we can compute average marks, top performers, and overall trend.
 
-* Mean height = 165 cm
-* Standard deviation = 10 cm
+🖼️ Diagram (Data Flow in Statistics)
 
----
-
-## 2️⃣ Inferential Statistics
-
-* Deals with **drawing conclusions or predictions** about a population using a sample.
-* Involves:
-
-  * Hypothesis testing
-  * Confidence intervals
-  * Regression & correlation
-
-**Example:**
-
-* A survey of 200 voters (sample) is used to predict the outcome of an election (population).
-
----
-
-## 🖼️ Diagram
-
-```
-Statistics
- ├── Descriptive Statistics → Summarize Data
- └── Inferential Statistics → Draw Conclusions from Sample
-```
+Raw Data → Organize → Analyze → Interpret → Conclusion
