@@ -1,0 +1,23 @@
+📊 Random Variable and Variable
+
+* Variable
+A characteristic that can take different values.
+Example: Age, Marks, Height.
+
+* Random Variable
+A variable whose value depends on the outcome of a random experiment.
+
+🔹 Types
+
+1. Discrete Random Variable → Countable values.
+Example: Number of heads in 3 coin tosses.
+
+2. Continuous Random Variable → Any value within a range.
+Example: Height, weight, temperature.
+
+🖼️ Diagram
+Variable
+ ├── Quantitative
+ │    ├── Discrete
+ │    └── Continuous
+ └── Qualitative (Categorical)
