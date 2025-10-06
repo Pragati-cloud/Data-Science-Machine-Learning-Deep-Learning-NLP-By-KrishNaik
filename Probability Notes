@@ -1,0 +1,125 @@
+Probability Notes
+Topics: Mutually Exclusive, Non-Mutually Exclusive, Independent, and Dependent Events
+
+1. Mutually Exclusive Events = Two events are mutually exclusive if they cannot occur at the same time.
+That is, occurrence of one event excludes the occurrence of the other.
+
+Mathematical Definition:
+If A and B are two events, then
+[
+P(A \cap B) = 0
+]
+
+Addition Rule (Mutually Exclusive):
+[
+P(A \cup B) = P(A) + P(B)
+]
+
+Example:
+When rolling a die,
+
+Event A = getting an even number = {2, 4, 6}
+Event B = getting an odd number = {1, 3, 5}
+Since A and B cannot happen together, they are mutually exclusive.
+[
+P(A \cup B) = P(A) + P(B) = \frac{3}{6} + \frac{3}{6} = 1
+]
+
+Diagram:
+
+   (A)●       ●(B)
+(No overlap)
+
+2. Non-Mutually Exclusive Events = Two events are non-mutually exclusive if they can occur at the same time.
+
+Mathematical Definition:
+[
+P(A \cap B) \neq 0
+]
+
+Addition Rule (Non-Mutually Exclusive):
+[
+P(A \cup B) = P(A) + P(B) - P(A \cap B)
+]
+
+Example:
+When drawing a card from a deck:
+
+Event A = drawing a red card
+Event B = drawing a king
+There are two red kings (♥, ♦) that belong to both A and B.
+[
+P(A \cup B) = P(A) + P(B) - P(A \cap B) = \frac{26}{52} + \frac{4}{52} - \frac{2}{52} = \frac{28}{52}
+]
+
+Diagram:
+
+   ●───●
+ (A)  ∩  (B)
+ (Overlap exists)
+
+3. Independent Events = Two events are independent if the occurrence of one does not affect the probability of the other.
+
+Mathematical Definition:
+[
+P(A \cap B) = P(A) \times P(B)
+]
+
+Multiplication Rule (Independent):
+[
+P(A \text{ and } B) = P(A) \times P(B)
+]
+
+Example:
+When tossing a coin and rolling a die:
+
+Event A = getting a Head = ½
+Event B = getting a 4 = 1/6
+[
+P(A \cap B) = P(A) \times P(B) = \frac{1}{2} \times \frac{1}{6} = \frac{1}{12}
+]
+
+Diagram:
+
+A and B are separate circles (no influence)
+
+4. Dependent Events = Two events are dependent if the occurrence of one affects the probability of the other.
+
+Mathematical Definition:
+[
+P(A \cap B) = P(A) \times P(B|A)
+]
+Where ( P(B|A) ) = Probability of B given that A has already occurred.
+
+Multiplication Rule (Dependent):
+[
+P(A \text{ and } B) = P(A) \times P(B|A)
+]
+
+Example:
+Drawing two cards without replacement from a deck:
+
+Event A = first card is King → ( P(A) = 4/52 )
+Event B = second card is King (after one King removed) → ( P(B|A) = 3/51 )
+[
+P(A \cap B) = \frac{4}{52} \times \frac{3}{51} = \frac{12}{2652} = \frac{1}{221}
+]
+
+Diagram:
+
+(A affects B)
+
+📘 Summary Table
+
+| Event Type             | Description                   | Key Formula                       | Example                |                           
+| ---------------------- | ----------------------------- | --------------------------------- | ---------------------- |
+| Mutually Exclusive     | Cannot happen together        | P(A ∪ B) = P(A) + P(B)            | Even or odd on a die   |                           
+| Non-Mutually Exclusive | Can happen together           | P(A ∪ B) = P(A) + P(B) − P(A ∩ B) | Red or King card       |                           
+| Independent            | One does not affect the other | P(A ∩ B) = P(A) × P(B)            | Coin toss and die roll |                           
+| Dependent              | One affects the other         | P(A ∩ B) = P(A) × P(B             | A)                     | 
+
+Combined Diagram (Venn Concept)
+
+Mutually Exclusive:      Non-Mutually Exclusive:
+  ●   ●                   ●───●
+Independent: separate trials; Dependent: outcome changes probability.
