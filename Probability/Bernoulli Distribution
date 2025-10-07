@@ -1,0 +1,108 @@
+🎯 Bernoulli Distribution — Statistics Notes (GitHub Friendly)
+
+1. Introduction = A Bernoulli Distribution is the simplest form of a discrete probability distribution.
+It describes the outcome of a single experiment that has only two possible outcomes:
+
+Success (1) → with probability p
+Failure (0) → with probability q = 1 - p
+
+It is used to model experiments such as:
+
+Tossing a coin (Head or Tail)
+Pass/Fail in an exam
+Win/Lose in a game
+
+2. Probability Distribution Function (PMF)
+For a Bernoulli random variable X, the Probability Mass Function (PMF) is:
+
+P(X = x) = p^x * (1 - p)^(1 - x) , where x = 0 or 1
+
+X	Outcome	Probability
+0	Failure	1 - p
+1	Success	p
+
+Condition:
+0 ≤ p ≤ 1 and (p + q) = 1
+
+3. Mean, Variance, Median, and Mode
+➤ Mean (Expected Value)
+E(X) = p
+
+➤ Variance
+Var(X) = p * (1 - p)
+
+➤ Standard Deviation
+SD(X) = √[p * (1 - p)]
+
+➤ Median
+If 0 < p < 1 → Median = 0 or 1
+(If p = 0.5, both 0 and 1 are medians)
+
+➤ Mode
+Mode = 1 if p > 0.5
+Mode = 0 if p < 0.5
+
+
+(If p = 0.5, both 0 and 1 are modes)
+
+4. Example
+Suppose you toss a fair coin.
+
+Let:
+Success = getting a Head → p = 0.5
+Failure = getting a Tail → q = 1 - p = 0.5
+
+X	Outcome	Probability
+0	Tail	0.5
+1	Head	0.5
+
+Now calculate:
+
+Mean = p = 0.5
+Variance = p * (1 - p) = 0.5 * 0.5 = 0.25
+Standard Deviation = √0.25 = 0.5
+Median = 0 or 1
+Mode = both 0 and 1 (since p = 0.5)
+
+5. PMF Graph (Bernoulli)
+Probability
+|
+|       ●
+|       |
+|   ●   |
+|___|___|___ X
+    0   1
+
+
+(Height of bars = 1 - p and p respectively)
+
+6. Properties of Bernoulli Distribution
+Property	Formula / Value	Description
+Type	Discrete	Two possible outcomes
+Parameters	p (probability of success)	0 ≤ p ≤ 1
+Mean	E(X) = p	Expected success rate
+Variance	Var(X) = p(1 - p)	Spread of data
+Mode	1 (if p > 0.5) or 0 (if p < 0.5)	Most frequent value
+Median	0 or 1	Central point
+Range of X	0, 1	Only two possible values
+
+7. Real-Life Examples
+Scenario	Success (1)	Failure (0)	Probability (p)
+Coin toss	Head	Tail	0.5
+Exam result	Pass	Fail	0.7
+Quality control	Defective	Non-defective	0.1
+
+8. Relationship with Binomial Distribution
+A Bernoulli distribution is a special case of the Binomial distribution with
+n = 1
+That is, Binomial(n=1, p) ≡ Bernoulli(p)
+
+9. Summary
+Measure	Formula	Description
+Mean	p	Expected success probability
+Variance	p(1 - p)	Measure of spread
+SD	√[p(1 - p)]	Spread in same units as X
+Median	0 or 1	Middle value
+Mode	1 if p > 0.5, else 0	Most frequent outcome
+
+Key Takeaway: Bernoulli Distribution models a single trial with binary outcomes — it forms the foundation for many statistical and machine learning concepts such as logistic regression and binomial models.
