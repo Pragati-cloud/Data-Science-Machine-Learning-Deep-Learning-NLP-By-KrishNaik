@@ -1,0 +1,131 @@
+📈 Probability Distributions — PMF, PDF, and CDF
+
+1. Introduction
+
+In probability theory, a random variable (X) represents numerical outcomes of random phenomena.
+It can be discrete or continuous, and its probability behavior is described by three main functions:
+
+PMF → for discrete random variables
+PDF → for continuous random variables
+CDF → cumulative probability for both types
+
+2. Probability Mass Function (PMF)
+Definition = A Probability Mass Function (PMF) gives the probability that a discrete random variable takes a specific value.
+
+Formula:
+P(X = x_i) = p(x_i)
+
+where
+
+X = random variable
+xᵢ = specific value
+p(xᵢ) = probability that X = xᵢ
+Properties
+0 ≤ p(xᵢ) ≤ 1
+Σ p(xᵢ) = 1
+Example
+
+Let X = number of heads in two coin tosses.
+
+X	Outcome	P(X)
+0	TT	1/4
+1	HT, TH	2/4
+2	HH	1/4
+
+Hence:
+P(X = 0) = 1/4, P(X = 1) = 1/2, P(X = 2) = 1/4
+
+PMF Graph (Discrete Steps)
+Probability
+|
+|        ●
+|     ●     ●
+|_____|_____|____ X
+      0     1     2
+
+3. Probability Density Function (PDF)
+Definition = A Probability Density Function (PDF) applies to continuous random variables.
+It shows how probability is distributed across continuous values.
+
+Formula (interval probability):
+P(a ≤ X ≤ b) = ∫ from a to b of f(x) dx
+
+Properties
+f(x) ≥ 0
+∫ from -∞ to +∞ of f(x) dx = 1
+For continuous variables, P(X = x) = 0
+Example
+
+If
+
+f(x) = x/2   for  0 ≤ x ≤ 2
+       0     otherwise
+
+the
+P(1 ≤ X ≤ 2) = ∫ from 1 to 2 of (x/2) dx = 3/4
+
+PDF Graph (Continuous Curve)
+f(x)
+|
+|        /\
+|       /  \
+|______/____\_______ X
+       0     2
+
+4. Cumulative Distribution Function (CDF)
+Definition = A Cumulative Distribution Function (CDF) gives the probability that X is less than or equal to a certain value.
+
+Formula:
+F(x) = P(X ≤ x)
+
+
+For discrete X:
+F(x) = Σ (for t ≤ x) P(X = t)
+
+
+For continuous X:
+F(x) = ∫ from -∞ to x of f(t) dt
+
+Properties
+0 ≤ F(x) ≤ 1
+F(-∞) = 0, F(∞) = 1
+F(x) is non-decreasing
+Example (Discrete)
+
+Using the previous coin toss PMF:
+
+X	P(X)	F(X) = P(X ≤ x)
+0	1/4	1/4
+1	1/2	3/4
+2	1/4	1.0
+CDF Graph (Stepwise)
+F(x)
+|
+|          _______
+|     _____|
+|____|
+|_________________ X
+     0   1   2
+
+5. Comparison of PMF, PDF, and CDF
+Function	Variable Type	Represents	Formula	Total Probability	Graph Type	Example
+PMF	Discrete	P(X = x)	Σ p(x) = 1	1	Step/Bar	Dice, coin toss
+PDF	Continuous	f(x), probability density	∫ f(x) dx = 1	1	Smooth curve	Height, weight
+CDF	Both	P(X ≤ x)	Σ p(x) or ∫ f(x)	1	Increasing curve	Score ≤ x
+
+6. Visual Comparison
+PMF → Shows probability at each discrete value.
+PDF → Shows probability density over a range.
+CDF → Accumulates probability up to a given point.
+
+7. Real-Life Examples
+Concept	Example	Explanation
+PMF	Rolling a die	Each face (1–6) has equal probability 1/6
+PDF	Height of people	Probability that height lies between 160–170 cm
+CDF	Exam scores	Probability that a student scores ≤ 70 marks
+
+🧩 Summary
+PMF: Discrete → P(X = x)
+PDF: Continuous → f(x), use area under curve
+CDF: Cumulative probability up to x
+Total probability = 1 for all cases
