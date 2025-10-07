@@ -1,0 +1,57 @@
+# 📙 Gaussian (Normal) Distribution
+
+🔹 Definition
+
+The Normal Distribution is a continuous probability distribution that is symmetric about its mean. It describes many natural phenomena such as height, IQ, and measurement errors.
+
+ 🔹 Probability Density Function (PDF)
+
+[
+f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{ -\frac{1}{2} \left( \frac{x - \mu}{\sigma} \right)^2 }
+]
+
+| Symbol       | Meaning                    |
+| :----------- | :------------------------- |
+| ( \mu )      | Mean                       |
+| ( \sigma )   | Standard Deviation         |
+| ( \sigma^2 ) | Variance                   |
+| ( e )        | Euler’s number (≈ 2.71828) |
+| ( \pi )      | 3.14159                    |
+
+ 🔹 Mean, Median, Mode, Variance
+
+| Measure            | Formula      |
+| :----------------- | :----------- |
+| Mean               | ( \mu )      |
+| Median             | ( \mu )      |
+| Mode               | ( \mu )      |
+| Variance           | ( \sigma^2 ) |
+| Standard Deviation | ( \sigma )   |
+
+ 🔹 Properties
+
+* Bell-shaped and symmetric about the mean.
+* Total area under the curve = 1.
+* 68% of data lies within ±1σ, 95% within ±2σ, 99.7% within ±3σ.
+
+| Range               | % of Data |
+| :------------------ | :-------- |
+| ( \mu \pm 1\sigma ) | 68%       |
+| ( \mu \pm 2\sigma ) | 95%       |
+| ( \mu \pm 3\sigma ) | 99.7%     |
+
+ 🔹 Example
+
+If IQ scores are normally distributed with mean ( \mu = 100 ) and ( \sigma = 15 ),
+find the probability that a person has an IQ between 85 and 115.
+
+[
+Z_1 = \frac{85 - 100}{15} = -1, \quad Z_2 = \frac{115 - 100}{15} = 1
+]
+
+From Z-table:
+[
+P(-1 < Z < 1) = 0.6826
+]
+
+Hence, **68.26%** of people have IQ between 85 and 115.
