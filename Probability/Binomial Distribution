@@ -1,0 +1,45 @@
+# 📘 Binomial Distribution
+
+🔹 Definition
+
+The Binomial Distribution represents the number of successes in a fixed number of independent Bernoulli trials, each with the same probability of success `p`.
+
+Example: Tossing a coin `n` times and counting how many times we get heads.
+
+🔹 Probability Mass Function (PMF)
+
+[
+P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k}
+]
+
+| Symbol    | Meaning                              |
+| :-------- | :----------------------------------- |
+| ( n )     | Number of trials                     |
+| ( k )     | Number of successes                  |
+| ( p )     | Probability of success in each trial |
+| ( 1 - p ) | Probability of failure               |
+
+ 🔹 Mean, Median, Mode, Variance
+
+| Measure            | Formula                                    |
+| :----------------- | :----------------------------------------- |
+| Mean               | ( \mu = n p )                              |
+| Variance           | ( \sigma^2 = n p (1 - p) )                 |
+| Standard Deviation | ( \sigma = \sqrt{n p (1 - p)} )            |
+| Mode               | ( \text{Mode} = \lfloor (n + 1)p \rfloor ) |
+| Median (approx.)   | ( \text{Median} \approx n p )              |
+
+ 🔹 Example
+
+If a coin (p = 0.5) is tossed 5 times, find the probability of getting exactly 3 heads.
+
+[
+P(X = 3) = \binom{5}{3} (0.5)^3 (0.5)^2 = 10 \times 0.125 \times 0.25 = 0.3125
+]
+
+🔹 Key Properties
+
+* Trials are independent.
+* Only two outcomes per trial (success/failure).
+* Fixed number of trials.
+
