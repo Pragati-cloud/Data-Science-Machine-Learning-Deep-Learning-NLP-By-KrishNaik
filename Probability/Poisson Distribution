@@ -1,0 +1,41 @@
+📗 Poisson Distribution
+
+ 🔹 Definition
+
+The Poisson Distribution gives the probability of a given number of events happening in a fixed interval of time or space if these events occur with a known constant rate and independently of the time since the last event.
+
+ 🔹 Probability Mass Function (PMF)
+
+[
+P(X = k) = \frac{e^{-\lambda} \lambda^k}{k!}
+]
+
+| Symbol      | Meaning                                      |
+| :---------- | :------------------------------------------- |
+| ( k )       | Number of occurrences                        |
+| ( \lambda ) | Mean number of occurrences in given interval |
+| ( e )       | Euler’s number (≈ 2.71828)                   |
+
+ 🔹 Mean, Median, Mode, Variance
+
+| Measure          | Formula                                                             |
+| :--------------- | :------------------------------------------------------------------ |
+| Mean             | ( \mu = \lambda )                                                   |
+| Variance         | ( \sigma^2 = \lambda )                                              |
+| Mode             | ( \lfloor \lambda \rfloor \text{ or } \lfloor \lambda \rfloor - 1 ) |
+| Median (approx.) | ( \text{Median} \approx \lambda + 1/3 - 0.02/\lambda )              |
+
+ 🔹 Example
+
+If a call center receives an average of 4 calls per minute, find the probability of receiving exactly 2 calls in one minute.
+
+[
+P(X = 2) = \frac{e^{-4} \cdot 4^2}{2!} = \frac{0.0183 \cdot 16}{2} = 0.1464
+]
+
+🔹 Key Properties
+
+* Used for **counting events** in time or space.
+* Mean = Variance = λ.
+* Limiting case of Binomial Distribution when ( n \to \infty ), ( p \to 0 ), but ( n p = \lambda ).
+
