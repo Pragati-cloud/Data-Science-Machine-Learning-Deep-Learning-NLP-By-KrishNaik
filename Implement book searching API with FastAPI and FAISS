@@ -1,0 +1,46 @@
+from fastapi import FastAPI
+from pydantic import BaseModel
+import pandas as pd
+import faiss
+import numpy as np
+from sentence_transformers import SentenceTransformer
+
+app = FastAPI()
+
+# load books csv
+df = pd.read_csv("data/books.csv")
+
+# load model
+model = SentenceTransformer("all-MiniLM-L6-v2")
+
+# embed docs
+docs = df['description'].tolist()
+embeddings = model.encode(docs)
+
+# FAISS index
+dimension = embeddings.shape[1]
+index = faiss.IndexFlatL2(dimension)
+index.add(np.array(embeddings))
+
+class Query(BaseModel):
+    query: str
+    k: int = 3
+
+@app.post("/search")
+async def search_books(q: Query):
+    q_emb = model.encode([q.query])
+    D, I = index.search(np.array(q_emb), k=q.k)
+
+    results = []
+    for i in I[0]:
+        results.append({
+            "title": df.iloc[i]['title'],
+            "description": df.iloc[i]['description']
+        })
+    
+    return {"query": q.query, "results": results}
+
+
+@app.get("/")
+async def home():
+    return {"message": "Book semantic search API running!"}
